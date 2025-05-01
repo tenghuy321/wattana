@@ -95,7 +95,7 @@ const Header = () => {
                             <NavLink to='/about' className={({ isActive }) => `block py-2 cursor-pointer transition rounded-full ${isActive ? 'bg-[#FF3217] text-[#fff] font-[500] tracking-wider' : 'bg-white'}`}>About Us</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/products' className={({ isActive }) => `block py-2 cursor-pointer transition rounded-full ${isActive ? 'bg-[#FF3217] text-[#fff] font-[500] tracking-wider' : 'bg-white'}`}>Porducts</NavLink>
+                            <NavLink to='/products' className={({ isActive }) => `block py-2 cursor-pointer transition rounded-full ${isActive ? 'bg-[#FF3217] text-[#fff] font-[500] tracking-wider' : 'bg-white'}`}>Products</NavLink>
                         </li>
                         <li>
                             <NavLink to='/services' className={({ isActive }) => `block py-2 cursor-pointer transition rounded-full ${isActive ? 'bg-[#FF3217] text-[#fff] font-[500] tracking-wider' : 'bg-white'}`}>Services</NavLink>

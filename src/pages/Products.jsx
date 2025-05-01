@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const productData = [
   {
@@ -236,7 +236,7 @@ const Products = () => {
           })}
         </div>
 
-        <div className="block lg:hidden w-full mx-auto px-2 sm:px-4 text-center">
+        <div className="block lg:hidden w-full mx-auto px-2 sm:px-4 pb-2 text-center">
           <Swiper
             navigation={{
               nextEl: '.custom-next',
@@ -264,16 +264,16 @@ const Products = () => {
               return (
                 <SwiperSlide
                   key={index}
-                  className="group w-full rounded-[20px] bg-white text-black hover:bg-[#FF3217] hover:text-white p-10 transition-all duration-300 cursor-pointer box-border"
+                  className="group w-full h-full rounded-[20px] bg-white text-black hover:bg-[#FF3217] hover:text-white p-10 transition-all duration-300 cursor-pointer box-border"
                 >
-                  <a href='#'>
+                  <Link to={item.path} className='flex flex-col items-center justify-center h-full'>
                     <div className='flex items-center justify-center'>
                       {item.icon}
                     </div>
                     <span className="text-[12px] xl:text-[16px] font-[400] transition-all duration-300 mt-1 xl:mt-2">
                       {item.title}
                     </span>
-                  </a>
+                  </Link>
                 </SwiperSlide>
               );
             })}
