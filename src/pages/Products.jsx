@@ -296,7 +296,7 @@ const Products = () => {
 
       </div>
 
-      <div className='w-full h-[40%] lg:h-[30%] text-[11px] text-[#000]'>
+      <div className='w-full h-[40%] lg:h-[30%] text-[12px] text-[#000]'>
         <h1 className='text-center text-[18px] text-[#FF3217] pt-6 lg:pt-2'>Products Uniques Selling Points</h1>
         <div className='w-full max-w-5xl mx-auto flex items-center justify-center flex-wrap'>
           <div className="flex flex-wrap">
