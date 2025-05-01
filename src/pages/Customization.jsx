@@ -93,34 +93,37 @@ const Customization = () => {
           <img src={customization} alt="3D Floor Plan" className="w-full h-auto" />
 
           {/* Living Room */}
-          <div className="absolute left-[30%] top-[50%] sm:left-[25%] sm:top-[55%] md:left-[25%] md:top-[55%] cursor-pointer" onClick={() => handleRoomClick('Living Room')}>
+          <div className="absolute left-[30%] top-[50%] sm:left-[20%] sm:top-[55%] md:left-[12%] md:top-[55%] lg:left-[3%] lg:top-[55%] cursor-pointer" onClick={() => handleRoomClick('Living Room')}>
             <div className="flex items-center space-x-2">
+              <span className="bg-white text-[10px] xl:text-[12px] px-2 py-1 rounded shadow hidden sm:block">Living Room</span>
               <div className="w-2 h-2 rotate-45 bg-[#FF3217]"></div>
-              <span className="bg-white text-[12px] sm:text-sm px-2 py-1 rounded shadow">Living Room</span>
+              <span className="bg-white text-[10px] xl:text-[12px] px-2 py-1 rounded shadow sm:hidden">Living Room</span>
             </div>
           </div>
 
           {/* Kitchen */}
-          <div className="absolute left-[20%] top-[14%] sm:left-[16%] sm:top-[16%] md:left-[16%] md:top-[18%] lg:left-[20%] lg:top-[14%] cursor-pointer" onClick={() => handleRoomClick('Kitchen')}>
+          <div className="absolute left-[20%] top-[14%] sm:left-[14%] sm:top-[16%] md:left-[10%] md:top-[15%] lg:-left-[4%] lg:top-[14%] cursor-pointer" onClick={() => handleRoomClick('Kitchen')}>
             <div className="flex items-center space-x-2">
+              <span className="bg-white text-[10px] xl:text-[12px] px-2 py-1 rounded shadow hidden sm:block">Kitchen</span>
               <div className="w-2 h-2 rotate-45 bg-[#FF3217]"></div>
-              <span className="bg-white text-[12px] sm:text-sm px-2 py-1 rounded shadow">Kitchen</span>
+              <span className="bg-white text-[10px] xl:text-[12px] px-2 py-1 rounded shadow sm:hidden">Kitchen</span>
             </div>
           </div>
 
           {/* Dining Area */}
-          <div className="absolute left-[30%] top-[32%] sm:left-[30%] sm:top-[38%] md:left-[30%] md:top-[38%] cursor-pointer" onClick={() => handleRoomClick('Dining Area')}>
+          <div className="absolute left-[30%] top-[32%] sm:left-[20%] sm:top-[38%] md:left-[18%] md:top-[40%] lg:left-[2%] lg:top-[35%] cursor-pointer" onClick={() => handleRoomClick('Dining Area')}>
             <div className="flex items-center space-x-2">
+              <span className="bg-white text-[10px] xl:text-[12px] px-2 py-1 rounded shadow hidden sm:block">Dining Area</span> 
               <div className="w-2 h-2 rotate-45 bg-[#FF3217]"></div>
-              <span className="bg-white text-[12px] sm:text-sm px-2 py-1 rounded shadow">Dining Area</span>
+              <span className="bg-white text-[10px] xl:text-[12px] px-2 py-1 rounded shadow sm:hidden">Dining Area</span> 
             </div>
           </div>
 
           {/* Bedroom */}
-          <div className="absolute left-[70%] top-[15%] sm:left-[72%] sm:top-[20%] md:left-[72%] md:top-[20%] cursor-pointer" onClick={() => handleRoomClick('Bedroom')}>
+          <div className="absolute left-[70%] top-[15%] sm:left-[72%] sm:top-[20%] md:left-[80%] md:top-[20%] cursor-pointer" onClick={() => handleRoomClick('Bedroom')}>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 rotate-45 bg-[#FF3217]"></div>
-              <span className="bg-white text-[12px] sm:text-sm px-2 py-1 rounded shadow">Bedroom</span>
+              <span className="bg-white text-[10px] xl:text-[12px] px-2 py-1 rounded shadow">Bedroom</span>
             </div>
           </div>
 
@@ -128,7 +131,7 @@ const Customization = () => {
           <div className="absolute left-[45%] top-[70%] sm:left-[45%] sm:top-[74%] md:left-[45%] md:top-[74%] cursor-pointer" onClick={() => handleRoomClick('Balcony')}>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 rotate-45 bg-[#FF3217]"></div>
-              <span className="bg-white text-[12px] sm:text-sm px-2 py-1 rounded shadow">Balcony</span>
+              <span className="bg-white text-[10px] xl:text-[12px] px-2 py-1 rounded shadow">Balcony</span>
             </div>
           </div>
         </div>

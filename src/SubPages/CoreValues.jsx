@@ -60,14 +60,14 @@ const CoreValues = () => {
                 return (
                     <div data-aos="fade-up" data-aos-duration="1200" key={index} className="text-[#000] rounded-lg">
                         <h1 className="font-[600] text-[20px] text-[#FF3217]">{item.number}</h1>
-                        <p className="h-[2rem] lg:h-[3rem] xl:h-[2rem] font-[400] text-[16px] text-[#FF3217]">{item.title}</p>
-                        <p className=''>{item.shortText}</p>
+                        <p className="h-[2rem] lg:h-[3rem] xl:h-[2rem] font-[400] text-[14px] text-[#FF3217]">{item.title}</p>
+                        <p className='text-[11px]'>{item.shortText}</p>
 
-                        {isOpen && <p className="mt-2 text-sm text-black">{item.moreText}</p>}
+                        {isOpen && <p className="mt-2 text-[11px] text-black">{item.moreText}</p>}
 
                         <button
                             onClick={() => handleToggle(index)}
-                            className="block px-3 py-1 border border-red-500 mt-4 md:mt-2 rounded-full text-sm text-[#FF3217]"
+                            className="block px-3 py-1 border border-red-500 mt-4 md:mt-2 rounded-full text-[11px] text-[#FF3217]"
                         >
                             {isOpen ? 'Show Less' : 'Read More'}
                         </button>

@@ -217,7 +217,7 @@ const productData = [
 const Products = () => {
   return (
     <div className='w-full min-h-screen sm:h-screen bg-white overflow-hidden'>
-      <div className='w-full h-[60%] lg:h-[70%] flex flex-col gap-6 items-center justify-end text-[20px] md:text-[25px] bg-center bg-cover pb-0 lg:pb-[1rem] overflow-hidden' style={{ backgroundImage: `url(${productBg})` }}>
+      <div className='w-full h-[60%] lg:h-[70%] flex flex-col gap-6 items-center justify-end xl:justify-center text-[20px] md:text-[25px] bg-center bg-cover pb-0 lg:pb-[1rem] overflow-hidden' style={{ backgroundImage: `url(${productBg})` }}>
         <div className='flex flex-col space-y-2 justify-center w-full max-w-4xl mx-auto px-4 sm:px-10 pt-16 pb-0 sm:pb-10 lg:pb-0 lg:pt-0'>
           <h1 data-aos="fade-right" data-aos-duration="1200" className='text-[#FF3217] font-[600]'>Products</h1>
           <p data-aos="fade-left" data-aos-duration="1200" className='text-[12px] sm:text-[14px] text-black'>
