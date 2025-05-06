@@ -7,13 +7,13 @@ import { useTranslation } from "react-i18next";
 const Navbar = () => {
   const { t } = useTranslation();
   return (
-    <section className="absolute left-1/2 -translate-x-1/2 hidden lg:flex items-center gap-4 xl:gap-10 w-full max-w-7xl mt-[4rem] px-4 xl:px-20">
+    <section className="absolute left-1/2 -translate-x-1/2 hidden lg:flex items-center gap-4 xl:gap-10 w-full max-w-7xl mt-[4rem] px-4">
       <div>
         <img src={logo} alt="" className="w-32 h-30" />
       </div>
 
       <div className="w-full bg-white rounded-full px-10 xl:px-12 py-4 xl:py-5 shadow-md">
-        <ul className="flex items-center justify-between gap-10 text-[#1E1E1E]">
+        <ul className="flex items-center justify-between gap-4 xl:gap-10 text-[#1E1E1E]">
           <li>
             <NavLink
               to="/"

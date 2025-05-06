@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
+import Button from "./Button";
 
 const Header = () => {
     const [open, setOpen] = useState(false);
+    const { t } = useTranslation();
 
     return (
       <>
@@ -127,23 +130,28 @@ const Header = () => {
             </svg>
           </div>
 
-          <div className="lg:hidden">
-            <button onClick={() => setOpen(true)} className="p-2 z-20 relative">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                width="24"
-                height="24"
-                strokeWidth="1.5"
-              >
-                <path d="M4 8l16 0" />
-                <path d="M4 16l16 0" />
-              </svg>
-            </button>
+          <div className='flex items-center gap-4 lg:hidden'>
+            <div>
+              <Button />
+            </div>
+            <div>
+              <button onClick={() => setOpen(true)} className="p-2 z-20 relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  width="24"
+                  height="24"
+                  strokeWidth="1.5"
+                >
+                  <path d="M4 8l16 0" />
+                  <path d="M4 16l16 0" />
+                </svg>
+              </button>
+            </div>
           </div>
         </section>
 
@@ -179,7 +187,7 @@ const Header = () => {
                     }`
                   }
                 >
-                  Home
+                  {t("home")}
                 </NavLink>
               </li>
               <li>
@@ -193,7 +201,7 @@ const Header = () => {
                     }`
                   }
                 >
-                  About Us
+                  {t("about_us")}
                 </NavLink>
               </li>
               <li>
@@ -207,7 +215,7 @@ const Header = () => {
                     }`
                   }
                 >
-                  Products
+                  {t("products")}
                 </NavLink>
               </li>
               <li>
@@ -221,7 +229,7 @@ const Header = () => {
                     }`
                   }
                 >
-                  Services
+                  {t("services")}
                 </NavLink>
               </li>
               <li>
@@ -235,7 +243,7 @@ const Header = () => {
                     }`
                   }
                 >
-                  Customization
+                  {t("customization")}
                 </NavLink>
               </li>
               <li>
@@ -249,7 +257,7 @@ const Header = () => {
                     }`
                   }
                 >
-                  Contact Us
+                  {t("contact_us")}
                 </NavLink>
               </li>
             </ul>
