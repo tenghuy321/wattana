@@ -29,7 +29,7 @@ import Service from "./SubPages/Service"
 import WhyUs from "./SubPages/WhyUs"
 import Registration from "./SubPages/Registration"
 import RoomCustomizationPage from "./pages/RoomCustomizationPage"
-
+import "./i18n";
 
 function App() {
 

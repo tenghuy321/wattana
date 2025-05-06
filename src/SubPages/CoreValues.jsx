@@ -1,51 +1,53 @@
 import React, { useState } from 'react';
-
-const data = [
-    {
-        number: '1',
-        title: 'Belief in Honesty and Fairness',
-        shortText: 'We treat our customers as our friends and family.',
-        moreText: 'more text',
-    },
-    {
-        number: '2',
-        title: 'Dedication to Excellent',
-        shortText: 'In everything we do, we always work to attain better outcomes.',
-        moreText: 'more text',
-    },
-    {
-        number: '3',
-        title: 'Belief in the Value of the Individual',
-        shortText: 'WATTANA prioritizes on employee value and views them as the most valuable asset.',
-        moreText: 'more text',
-    },
-    {
-        number: '4',
-        title: 'Always Keep Learning ',
-        shortText: 'We aim to learn at least 1% per day of new knowledge and experience. We make it a part of our daily operation to read and to learn.',
-        moreText: 'more text',
-    },
-    {
-        number: '5',
-        title: 'Getting Feedback Early',
-        shortText: 'Receiving feedback early means we can act to improve quickly as well.',
-        moreText: 'more text',
-    },
-    {
-        number: '6',
-        title: 'Concern for Social Responsibility',
-        shortText: 'We have declared our intent to do business  in accordance with our obligations and responsibilities to the nation and society as a whole.',
-        moreText: 'more text',
-    },
-    {
-        number: '7',
-        title: 'Showing Respect',
-        shortText: 'Show respect to all involved parties, namely our teams, our customers and the industry as a whole.',
-        moreText: 'more text',
-    },
-];
+import { useTranslation } from "react-i18next";
 
 const CoreValues = () => {
+    const { t } = useTranslation();
+
+    const data = [
+      {
+        number: "1",
+        title: t("core_value_title_1"),
+        shortText: t("core_values_content_1"),
+        moreText: "more text",
+      },
+      {
+        number: "2",
+        title: t("core_value_title_2"),
+        shortText: t("core_values_content_2"),
+        moreText: "more text",
+      },
+      {
+        number: "3",
+        title: t("core_value_title_3"),
+        shortText: t("core_values_content_3"),
+        moreText: "more text",
+      },
+      {
+        number: "4",
+        title: t("core_value_title_4"),
+        shortText: t("core_values_content_4"),
+        moreText: "more text",
+      },
+      {
+        number: "5",
+        title: t("core_value_title_5"),
+        shortText: t("core_values_content_5"),
+        moreText: "more text",
+      },
+      {
+        number: "6",
+        title: t("core_value_title_6"),
+        shortText: t("core_values_content_6"),
+        moreText: "more text",
+      },
+      {
+        number: "7",
+        title: t("core_value_title_7"),
+        shortText: t("core_values_content_7"),
+        moreText: "more text",
+      },
+    ];
     const [openIndex, setOpenIndex] = useState(null);
 
     const handleToggle = (index) => {
