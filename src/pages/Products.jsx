@@ -7,8 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
-import homeImage from '../assets/images/home_bg.png';
-import homeImage1 from '../assets/images/customization.png';
+
 
 import cabinet1 from '../assets/images/cabinet/cabinet-1.png';
 import cabinet2 from '../assets/images/cabinet/cabinet-2.png';
