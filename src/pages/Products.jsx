@@ -1249,7 +1249,7 @@ const Products = () => {
                   >
                     <div className="flex items-center gap-2">
                       {iconMap[key] || iconMap.default}
-                      <span className="capitalize text-[14px] md:text-[16px]">{key}</span>
+                      <span className="capitalize text-[14px] md:text-[16px]">{t(key)}</span>
                     </div>
                   </button>
                 </li>

@@ -46,7 +46,7 @@ const Services = () => {
               />
             </svg>
           </NavLink>
-          <span className="hidden sm:block">{t("service")}</span>
+          <span className="">{t("service")}</span>
         </NavLink>
         <NavLink
           data-aos="fade-up"
@@ -88,7 +88,7 @@ const Services = () => {
               />
             </svg>
           </NavLink>
-          <span className="hidden sm:block">{t("why_us")}</span>
+          <span className="">{t("why_us")}</span>
         </NavLink>
         <NavLink
           data-aos="fade-up"
@@ -124,7 +124,7 @@ const Services = () => {
               />
             </svg>
           </NavLink>
-          <span className="hidden sm:block">{t("registration")}</span>
+          <span className="">{t("registration")}</span>
         </NavLink>
       </div>
 
