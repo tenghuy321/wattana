@@ -9,6 +9,7 @@ import livingRoom4 from '../assets/images/living/living4.jpg';
 import livingRoom5 from '../assets/images/living/living5.jpg';
 import livingRoom6 from '../assets/images/living/living6.jpg';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const roomImages = {
@@ -65,9 +66,12 @@ const Customization = () => {
 
   const imagesToShow = roomImages[selectedRoom] || [defaultImage, defaultImage, defaultImage];
 
+  const { t } = useTranslation();
+  
+
   return (
     <div className='w-full min-h-screen lg:h-screen bg-center bg-cover flex flex-col items-center justify-center overflow-hidden' style={{ backgroundImage: `url(${customizationBg})` }}>
-      <h1 className='text-[22px] text-[#FF3217] pt-20 xl:pt-10 tracking-wider'>Customization</h1>
+      <h1 className='text-[22px] text-[#FF3217] pt-20 xl:pt-10 tracking-wider'>{t("customization")}</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-center mt-10 max-w-7xl mx-auto lg:px-4'>
         <div data-aos="fade-right" data-aos-duration="1200" className="flex flex-col space-y-4 justify-center items-center lg:items-start order-2 lg:order-none mt-10 sm:mt-10 mb-20 lg:mb-0 lg:mt-0">
           {imagesToShow.slice(0, 3).map((imgObj, i) => (
@@ -152,7 +156,6 @@ const Customization = () => {
                 className="w-full h-full object-cover rounded-md hover:scale-110 transition-all duration-500"
               />
             </Link>
-
           ))}
         </div>
       </div>

@@ -29,13 +29,13 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between sm:justify-around max-w-5xl mx-auto px-4 sm:px-10 relative -top-[25px] sm:-top-[32px] lg:-top-[30px]">
+        <div className="flex items-start md:items-center justify-between sm:justify-around w-full max-w-5xl mx-auto px-4 md:px-10 relative -top-[25px] sm:-top-[32px] lg:-top-[30px]">
           <NavLink
             data-aos="fade-up"
             data-aos-duration="1200"
             to="/about/vision"
             className={({ isActive }) =>
-              `flex flex-col items-center text-[16px] md:text-[18px] gap-4 ${
+              `w-[100px] md:w-full flex flex-col items-center text-[16px] md:text-[18px] gap-4 ${
                 isActive ? "text-[#FF3217] font-[600]" : "text-[#000]"
               }`
             }
@@ -134,14 +134,14 @@ const About = () => {
                 </g>
               </svg>
             </NavLink>
-            <span className="hidden sm:block">{t("vision")}</span>
+            <span className="text-[10px] md:text-[16px] text-center">{t("vision")}</span>
           </NavLink>
           <NavLink
             data-aos="fade-up"
             data-aos-duration="1400"
             to="/about/mission"
             className={({ isActive }) =>
-              `flex flex-col items-center text-[16px] md:text-[18px] gap-4 ${
+              `w-[100px] md:w-full flex flex-col items-center text-[16px] md:text-[18px] gap-4 ${
                 isActive ? "text-[#FF3217] font-[600]" : "text-[#000]"
               }`
             }
@@ -168,14 +168,14 @@ const About = () => {
                 />
               </svg>
             </NavLink>
-            <span className="hidden sm:block">{t("mission")}</span>
+            <span className="text-[10px] md:text-[16px] text-center">{t("mission")}</span>
           </NavLink>
           <NavLink
             data-aos="fade-up"
             data-aos-duration="1600"
             to="/about/core-values"
             className={({ isActive }) =>
-              `flex flex-col items-center text-[16px] md:text-[18px] gap-4 ${
+              `w-[100px] md:w-full flex flex-col items-center text-[16px] md:text-[18px] gap-4 ${
                 isActive ? "text-[#FF3217] font-[600]" : "text-[#000]"
               }`
             }
@@ -249,14 +249,14 @@ const About = () => {
                 </g>
               </svg>
             </NavLink>
-            <span className="hidden sm:block">{t("core_values")}</span>
+            <span className="text-[10px] md:text-[16px] text-center">{t("core_values")}</span>
           </NavLink>
           <NavLink
             data-aos="fade-up"
             data-aos-duration="1800"
             to="/about/msg"
             className={({ isActive }) =>
-              `flex flex-col items-center text-[16px] md:text-[18px] gap-4 ${
+              `w-[100px] md:w-full flex flex-col items-center text-[16px] md:text-[18px] gap-4 ${
                 isActive ? "text-[#FF3217] font-[600]" : "text-[#000]"
               }`
             }
@@ -283,7 +283,7 @@ const About = () => {
                 />
               </svg>
             </NavLink>
-            <span className="hidden sm:block">{t("msg")}</span>
+            <span className="text-[10px] md:text-[16px] text-center">{t("msg")}</span>
           </NavLink>
         </div>
 
