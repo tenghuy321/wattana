@@ -13,56 +13,58 @@ import livingRoom4 from '../assets/images/living/living4.jpg';
 import livingRoom5 from '../assets/images/living/living5.jpg';
 import livingRoom6 from '../assets/images/living/living6.jpg';
 import defaultImage from '../assets/images/testing.jpg';
+import { useTranslation } from 'react-i18next';
 
 const allImages = {
     'living-room': {
-        livingRoom1: { name: 'Glass Windows', images: [livingRoom1, livingRoom2] },
-        livingRoom2: { name: 'Glass Windows', images: [livingRoom3, livingRoom4] },
-        livingRoom3: { name: 'Glass Windows', images: [livingRoom5, livingRoom6] },
-        livingRoom4: { name: 'Glass Windows', images: [livingRoom1, livingRoom3] },
-        livingRoom5: { name: 'Glass Windows', images: [livingRoom2, livingRoom5] },
-        livingRoom6: { name: 'Glass Windows', images: [livingRoom4, livingRoom6] },
+        livingRoom1: { name: 'testing', images: [livingRoom1, livingRoom2] },
+        livingRoom2: { name: 'testing', images: [livingRoom3, livingRoom4] },
+        livingRoom3: { name: 'testing', images: [livingRoom5, livingRoom6] },
+        livingRoom4: { name: 'testing', images: [livingRoom1, livingRoom3] },
+        livingRoom5: { name: 'testing', images: [livingRoom2, livingRoom5] },
+        livingRoom6: { name: 'testing', images: [livingRoom4, livingRoom6] },
     },
     bedroom: {
-        bedroom1: { name: 'Glass Windows', images: [livingRoom1] },
-        bedroom2: { name: 'Glass Windows', images: [livingRoom2] },
-        bedroom3: { name: 'Glass Windows', images: [livingRoom3] },
-        bedroom4: { name: 'Glass Windows', images: [livingRoom4] },
-        bedroom5: { name: 'Glass Windows', images: [livingRoom5] },
-        bedroom6: { name: 'Glass Windows', images: [livingRoom6] },
+        bedroom1: { name: 'testing', images: [livingRoom1] },
+        bedroom2: { name: 'testing', images: [livingRoom2] },
+        bedroom3: { name: 'testing', images: [livingRoom3] },
+        bedroom4: { name: 'testing', images: [livingRoom4] },
+        bedroom5: { name: 'testing', images: [livingRoom5] },
+        bedroom6: { name: 'testing', images: [livingRoom6] },
     },
     kitchen: {
-        kitchen1: { name: 'Glass Windows', images: [defaultImage] },
-        kitchen2: { name: 'Glass Windows', images: [defaultImage] },
-        kitchen3: { name: 'Glass Windows', images: [defaultImage] },
-        kitchen4: { name: 'Glass Windows', images: [defaultImage] },
-        kitchen5: { name: 'Glass Windows', images: [defaultImage] },
-        kitchen6: { name: 'Glass Windows', images: [defaultImage] },
+        kitchen1: { name: 'testing', images: [defaultImage] },
+        kitchen2: { name: 'testing', images: [defaultImage] },
+        kitchen3: { name: 'testing', images: [defaultImage] },
+        kitchen4: { name: 'testing', images: [defaultImage] },
+        kitchen5: { name: 'testing', images: [defaultImage] },
+        kitchen6: { name: 'testing', images: [defaultImage] },
     },
     'dining-area': {
-        dining1: { name: 'Glass Windows', images: [defaultImage] },
-        dining2: { name: 'Glass Windows', images: [defaultImage] },
-        dining3: { name: 'Glass Windows', images: [defaultImage] },
-        dining4: { name: 'Glass Windows', images: [defaultImage] },
-        dining5: { name: 'Glass Windows', images: [defaultImage] },
-        dining6: { name: 'Glass Windows', images: [defaultImage] },
+        dining1: { name: 'testing', images: [defaultImage] },
+        dining2: { name: 'testing', images: [defaultImage] },
+        dining3: { name: 'testing', images: [defaultImage] },
+        dining4: { name: 'testing', images: [defaultImage] },
+        dining5: { name: 'testing', images: [defaultImage] },
+        dining6: { name: 'testing', images: [defaultImage] },
     },
     balcony: {
-        balcony1: { name: 'Glass Windows', images: [defaultImage] },
-        balcony2: { name: 'Glass Windows', images: [defaultImage] },
-        balcony3: { name: 'Glass Windows', images: [defaultImage] },
-        balcony4: { name: 'Glass Windows', images: [defaultImage] },
-        balcony5: { name: 'Glass Windows', images: [defaultImage] },
-        balcony6: { name: 'Glass Windows', images: [defaultImage] },
+        balcony1: { name: 'testing', images: [defaultImage] },
+        balcony2: { name: 'testing', images: [defaultImage] },
+        balcony3: { name: 'testing', images: [defaultImage] },
+        balcony4: { name: 'testing', images: [defaultImage] },
+        balcony5: { name: 'testing', images: [defaultImage] },
+        balcony6: { name: 'testing', images: [defaultImage] },
     },
 };
-
 
 const RoomCustomizationPage = () => {
     const { roomType, roomId } = useParams();
     const roomData = allImages[roomType]?.[roomId];
     const images = roomData?.images;
     const roomName = roomData?.name;
+
+    const { t } = useTranslation();
 
     return (
         <div className="flex flex-col justify-center items-center w-full h-screen bg-gray-100 pt-20 overflow-hidden">
@@ -75,7 +77,7 @@ const RoomCustomizationPage = () => {
                     <span>Back</span>
                 </a>
             </div>
-            <h1 data-aos="fade-right" data-aos-duration="1200" className='mb-4 text-xl font-semibold text-gray-700'>{roomName}</h1>
+            <h1 data-aos="fade-right" data-aos-duration="1200" className='mb-4 text-xl font-semibold text-gray-700'>{t(`${roomName}`)}</h1>
             <div className="w-full max-w-4xl h-1/2 sm:h-2/3 flex justify-center items-center px-4">
                 {images && images.length > 0 ? (
                     <div className='w-full h-full'>

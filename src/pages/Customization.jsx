@@ -312,7 +312,7 @@ const Customization = () => {
             {/* Living Room */}
             <div className="absolute left-[2%] top-[40%] sm:left-[6%] sm:top-[45%] md:left-[6%] md:top-[45%] lg:-left-[5%] lg:top-[40%] cursor-pointer" onClick={() => handleRoomClick('Living Room Space')}>
               <div className="relative flex space-x-2 items-center">
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Living Room Space</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Living Room Space")}</span>
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
               </div>
             </div>
@@ -320,7 +320,7 @@ const Customization = () => {
             {/* Glass */}
             <div className="absolute left-[20%] top-[70%] sm:left-[25%] sm:top-[70%] md:left-[30%] md:top-[70%] lg:left-[17%] lg:top-[68%] cursor-pointer" onClick={() => handleRoomClick('Door glass')}>
               <div className="relative flex space-x-2 items-center">
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Door glass</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Door glass")}</span>
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
               </div>
             </div>
@@ -329,7 +329,7 @@ const Customization = () => {
             {/* Kitchen */}
             <div className="absolute left-[6%] top-[10%] sm:left-[5%] sm:top-[18%] md:left-[5%] md:top-[20%] lg:left-[-5%] lg:top-[14%] cursor-pointer" onClick={() => handleRoomClick('Kitchen')}>
               <div className="relative flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 items-center">
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Kitchen Space</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Kitchen Space")}</span>
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
               </div>
             </div>
@@ -337,7 +337,7 @@ const Customization = () => {
             {/* wardrobe */}
             <div className="absolute left-[38%] top-[1%] sm:left-[42%] sm:top-[6%] md:left-[42%] md:top-[6%] lg:left-[40%] lg:top-[-5%] cursor-pointer" onClick={() => handleRoomClick('Wardrobe')}>
               <div className="relative flex flex-col space-y-2 items-center">
-                <span className="bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Wardrobe</span>
+                <span className="bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Wardrobe")}</span>
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
               </div>
             </div>
@@ -345,7 +345,7 @@ const Customization = () => {
             {/* mirror */}
             <div className="absolute left-[25%] top-[16%] sm:left-[35%] sm:top-[15%] md:left-[35%] md:top-[15%] lg:left-[32%] lg:top-[10%] cursor-pointer" onClick={() => handleRoomClick('Mirror')}>
               <div className="relative flex flex-row sm:flex-col space-x-2 sm:space-x-0 sm:space-y-2 items-center">
-                <span className="bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Mirror</span>
+                <span className="bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Mirror")}</span>
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
               </div>
             </div>
@@ -354,7 +354,7 @@ const Customization = () => {
             {/* Living Room Cabnet */}
             <div className="absolute left-[20%] top-[50%] sm:left-[30%] sm:top-[48%] md:left-[30%] md:top-[50%] lg:left-[15%] lg:top-[48%] cursor-pointer" onClick={() => handleRoomClick('Living Room Cabnet')}>
               <div className="relative flex space-x-2 items-center">
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Living Room Cabnet</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Living Room Cabnet")}</span>
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
               </div>
             </div>
@@ -364,7 +364,7 @@ const Customization = () => {
             <div className="absolute left-[50%] top-[10%] sm:left-[50%] sm:top-[13%] md:left-[50%] md:top-[15%] lg:left-[50%] lg:top-[8%] xl:left-[50%] xl:top-[10%] cursor-pointer" onClick={() => handleRoomClick('Bathroom Space')}>
               <div className="relative flex space-x-2 items-center">
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Bathroom Space</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Bathroom Space")}</span>
               </div>
             </div>
 
@@ -372,7 +372,7 @@ const Customization = () => {
             <div className="absolute left-[63%] top-[18%] sm:left-[65%] sm:top-[20%] md:left-[65%] md:top-[20%] lg:left-[65%] lg:top-[18%] cursor-pointer" onClick={() => handleRoomClick('Study Space')}>
               <div className="relative flex space-x-2 items-center">
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Study Space</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Study Space")}</span>
               </div>
             </div>
 
@@ -380,7 +380,7 @@ const Customization = () => {
             <div className="absolute left-[75%] top-[25%] sm:left-[80%] sm:top-[25%] md:left-[80%] md:top-[25%] lg:left-[80%] lg:top-[26%] xl:left-[80%] xl:top-[25%] cursor-pointer" onClick={() => handleRoomClick('Book Cabinet')}>
               <div className="relative flex space-x-2 items-center">
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Book Cabinet</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Book Cabinet")}</span>
               </div>
             </div>
 
@@ -388,14 +388,14 @@ const Customization = () => {
             <div className="absolute left-[82%] top-[35%] sm:left-[88%] sm:top-[35%] md:left-[88%] md:top-[35%] lg:left-[88%] lg:top-[35%] cursor-pointer" onClick={() => handleRoomClick('Glass Fix')}>
               <div className="relative flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2 items-center">
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Glass Fix</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Glass Fix")}</span>
               </div>
             </div>
 
             {/* Balcony */}
             <div className="absolute left-[20%] top-[80%] sm:left-[30%] sm:top-[80%] md:left-[30%] md:top-[80%] lg:left-[20%] lg:top-[78%] cursor-pointer" onClick={() => handleRoomClick('Balcony Space')}>
               <div className="relative flex space-x-2 items-center">
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Balcony Space</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Balcony Space")}</span>
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
               </div>
             </div>
@@ -404,7 +404,7 @@ const Customization = () => {
             <div className="absolute left-[50%] top-[78%] sm:left-[50%] sm:top-[82%] md:left-[50%] md:top-[82%] lg:left-[50%] lg:top-[78%] cursor-pointer" onClick={() => handleRoomClick('Railing')}>
               <div className="relative flex flex-col space-y-2 items-center">
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
-                <span className="bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Railing</span>
+                <span className="bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Railing")}</span>
               </div>
             </div>
 
@@ -412,7 +412,7 @@ const Customization = () => {
             <div className="absolute left-[62%] top-[45%] sm:left-[60%] sm:top-[50%] md:left-[65%] md:top-[45%] lg:left-[50%] lg:top-[50%] xl:left-[55%] xl:top-[48%] cursor-pointer" onClick={() => handleRoomClick('Glass Windows')}>
               <div className="relative flex flex-col space-y-2 items-center">
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
-                <span className="sm:ml-10 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Glass Windows</span>
+                <span className="sm:ml-10 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Glass Windows")}</span>
               </div>
             </div>
 
@@ -420,7 +420,7 @@ const Customization = () => {
             <div className="absolute left-[55%] top-[35%] sm:left-[60%] sm:top-[35%] md:left-[60%] md:top-[35%] lg:left-[55%] lg:top-[35%] cursor-pointer" onClick={() => handleRoomClick('Bedroom Space')}>
               <div className="relative flex space-x-2 items-center">
                 <div className="w-1 h-1 rotate-45 bg-[#FF3217]"></div>
-                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">Bedroom Space</span>
+                <span className="ml-2 bg-white text-[8px] xl:text-[10px] px-2 py-1 rounded shadow whitespace-nowrap">{t("Bedroom Space")}</span>
               </div>
             </div>
           </div>
