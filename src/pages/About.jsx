@@ -7,11 +7,10 @@ const About = () => {
       const { t } = useTranslation();
     return (
       <div className="w-full h-screen bg-white">
-        <div
-          className="w-full h-1/2 lg:h-[60%] xl:h-1/2 text-[20px] md:text-[25px] bg-center bg-cover"
+        <div className="w-full h-1/2 lg:h-[60%] xl:h-1/2 text-[20px] md:text-[25px] bg-center bg-cover"
           style={{ backgroundImage: `url(${aboutBg})` }}
         >
-          <div className="flex flex-col space-y-2 justify-center lg:justify-end w-full h-full max-w-5xl mx-auto lg:pb-[5rem] px-4 sm:px-10">
+          <div className="flex flex-col space-y-2 justify-center lg:justify-end w-full h-full max-w-5xl mx-auto lg:pb-[4rem] xl:pb-[5rem] px-4 sm:px-10">
             <h1
               className="text-[#FF3217] font-[600]"
               data-aos="fade-right"
