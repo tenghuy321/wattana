@@ -11,9 +11,7 @@ const Service = () => {
           data-aos-duration="1600"
           className="w-full h-full bg-[#C10E00] rounded-lg text-[#fff] text-[20px] font-[300] flex flex-col items-center justify-center space-y-4 py-6"
         >
-          <svg
-            width="93"
-            height="93"
+          <svg className='w-10 h-10'
             viewBox="0 0 93 93"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -81,15 +79,14 @@ const Service = () => {
             </g>
           </svg>
           <span>{t("installation")}</span>
+          <span className='text-[12px] text-center px-2'>{t("installation_des")}</span>
         </div>
         <div
           data-aos="fade-left"
           data-aos-duration="1600"
           className="w-full h-full bg-[#C10E00] rounded-lg text-[#fff] text-[20px] font-[300] flex flex-col items-center justify-center space-y-4 py-6"
         >
-          <svg
-            width="91"
-            height="91"
+          <svg className='w-10 h-10'
             viewBox="0 0 91 91"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -117,6 +114,7 @@ const Service = () => {
           </svg>
 
           <span>{t("maintenance")}</span>
+          <span className='text-[12px] text-center px-2'>{t("maintenance_des")}</span>
         </div>
       </div>
     );

@@ -30,7 +30,7 @@ const Services = () => {
               `rounded-full flex items-center justify-center ${
                 isActive
                   ? "w-12 h-12 sm:w-16 sm:h-16 bg-[#FF3217]"
-                  : "w-10 h-10 sm:w-12 sm:h-12 bg-[#000]"
+                  : "w-12 h-12 sm:w-12 sm:h-12 bg-[#000]"
               }`
             }
           >
@@ -64,7 +64,7 @@ const Services = () => {
               `rounded-full flex items-center justify-center ${
                 isActive
                   ? "w-12 h-12 sm:w-14 sm:h-14 bg-[#FF3217]"
-                  : "w-10 h-10 sm:w-12 sm:h-12 bg-[#000]"
+                  : "w-12 h-12 sm:w-12 sm:h-12 bg-[#000]"
               }`
             }
           >
@@ -106,7 +106,7 @@ const Services = () => {
               `rounded-full flex items-center justify-center ${
                 isActive
                   ? "w-12 h-12 sm:w-14 sm:h-14 bg-[#FF3217]"
-                  : "w-10 h-10 sm:w-12 sm:h-12 bg-[#000]"
+                  : "w-12 h-12 sm:w-12 sm:h-12 bg-[#000]"
               }`
             }
           >

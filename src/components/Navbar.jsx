@@ -89,9 +89,9 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div>
+      {/* <div>
         <Button />
-      </div>
+      </div> */}
     </section>
   );
 }

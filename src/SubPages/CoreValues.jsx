@@ -55,7 +55,7 @@ const CoreValues = () => {
     };
 
     return (
-        <div className='w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 pb-20 text-black text-[12px] md:text-[14px] px-4'>
+        <div className='w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 lg:mt-0 xl:mt-10 pb-20 text-black text-[12px] md:text-[14px] px-4'>
             {data.map((item, index) => {
                 const isOpen = openIndex === index;
 

@@ -72,11 +72,15 @@ const Header = () => {
                 />
               </svg>
 
-              <p>#31-33, National Road 1, Chbar Ampov Phnom Penh</p>
+              <p>{t("contact_location")}</p>
             </div>
           </div>
 
           <div className="flex items-center gap-2">
+            <div className='mr-2 hidden lg:flex'>
+              <Button />
+            </div>
+
             <svg
               className="w-5 h-5"
               viewBox="0 0 16 16"
@@ -128,12 +132,14 @@ const Header = () => {
                 fill="white"
               />
             </svg>
+
+            <div className='ml-2 lg:hidden flex'>
+              <Button />
+            </div>
+
           </div>
 
           <div className='flex items-center gap-4 lg:hidden'>
-            <div>
-              <Button />
-            </div>
             <div>
               <button onClick={() => setOpen(true)} className="p-2 z-20 relative">
                 <svg

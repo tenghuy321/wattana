@@ -41,7 +41,7 @@ export default function Button() {
           alt="usa-flag"
           width="2000"
           height="2000"
-          className="w-[50px] h-full"
+          className="w-[30px] h-full"
         />
       </button>
       <button
@@ -53,7 +53,7 @@ export default function Button() {
           alt="kh-flag"
           width="2000"
           height="2000"
-          className="w-[50px] h-full"
+          className="w-[30px] h-full"
         />
       </button>
     </div>

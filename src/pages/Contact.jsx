@@ -4,8 +4,12 @@ import logo from '../assets/images/logo.png'
 import icon1 from '../assets/images/icon-1.png'
 import icon2 from '../assets/images/icon-2.png'
 import icon3 from '../assets/images/icon-3.png'
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div className='w-full h-screen bg-white'>
       <div className='w-full h-[40%] text-[20px] md:text-[25px] bg-center bg-cover' style={{ backgroundImage: `url(${aboutBg})` }}>
@@ -13,8 +17,8 @@ const Contact = () => {
 
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10 items-start justify-center max-w-7xl mx-auto px-4'>
         <div className='flex flex-col space-y-4 text-[22px] text-[#FF3217] font-[700]'>
-          <h1 className='pt-10'>Need Consultation</h1>
-          <p className='text-[14px] text-[#FF3217] font-[400] pt-4 sm:pt-10'>Please feel free to reach out to us, and one of our consultants will respond within 48 hours.</p>
+          <h1 className='pt-10'>{t('contact_title_1')}</h1>
+          <p className='text-[14px] text-[#FF3217] font-[400] pt-4 sm:pt-10'>{t('contact_des')}</p>
 
           <a href="#" className='flex items-center space-x-2 text-[14px] text-[#000] font-[400]'>
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +33,7 @@ const Contact = () => {
         </div>
 
         <div className='flex flex-col space-y-4 text-[22px] text-[#FF3217] font-[700]'>
-          <h1 className='pt-10'>Contact Us</h1>
+          <h1 className='pt-10'>{t('contact_us')}</h1>
 
           <div className='flex items-center space-x-2 text-[14px] text-[#000] font-[400] pt-4 sm:pt-10'>
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +49,7 @@ const Contact = () => {
               <path d="M12.4851 9.61708C11.6254 9.61708 10.8055 9.4298 10.0494 9.06022C9.93086 9.00344 9.79339 8.99448 9.66787 9.03731C9.54236 9.08114 9.43975 9.17279 9.38197 9.29134L9.02335 10.0335C7.94748 9.41586 7.05491 8.52229 6.43629 7.44642L7.17943 7.0878C7.29897 7.03002 7.38963 6.92742 7.43346 6.8019C7.47629 6.67638 7.46832 6.53891 7.41055 6.42036C7.03997 5.66526 6.85269 4.84541 6.85269 3.98472C6.85269 3.70978 6.62954 3.48663 6.3546 3.48663H4.51566C4.24072 3.48663 4.01758 3.70978 4.01758 3.98472C4.01758 8.65378 7.81599 12.4522 12.4851 12.4522C12.76 12.4522 12.9831 12.2291 12.9831 11.9541V10.1152C12.9831 9.84023 12.76 9.61708 12.4851 9.61708Z" fill="#FAFAFA" />
             </svg>
 
-            <span >Head Office <br /> <a href="tel:096 722 722 7">096 / 088 722 722 7</a></span>
+            <span >{t('contact_title_2')} <br /> <a href="tel:096 722 722 7">096 / 088 722 722 7</a></span>
           </div>
           <a href="#" className='flex items-start space-x-2 text-[14px] text-[#000] font-[400]'>
             <div className='mt-[2px]'>
@@ -55,7 +59,7 @@ const Contact = () => {
               </svg>
             </div>
 
-            <span>#31-33, National Road 1, Chbar Ampov Phnom Penh, Cambodia</span>
+            <span>{t('contact_location')}</span>
           </a>
         </div>
 

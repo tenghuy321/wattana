@@ -8,7 +8,7 @@ const About = () => {
     return (
       <div className="w-full h-screen bg-white">
         <div
-          className="w-full h-1/2 text-[20px] md:text-[25px] bg-center bg-cover"
+          className="w-full h-1/2 lg:h-[60%] xl:h-1/2 text-[20px] md:text-[25px] bg-center bg-cover"
           style={{ backgroundImage: `url(${aboutBg})` }}
         >
           <div className="flex flex-col space-y-2 justify-center lg:justify-end w-full h-full max-w-5xl mx-auto lg:pb-[5rem] px-4 sm:px-10">
@@ -46,7 +46,7 @@ const About = () => {
                 `rounded-full flex items-center justify-center ${
                   isActive
                     ? "w-12 h-12 sm:w-16 sm:h-16 bg-[#FF3217]"
-                    : "w-10 h-10 sm:w-12 sm:h-12 bg-[#000]"
+                    : "w-12 h-12 sm:w-12 sm:h-12 bg-[#000]"
                 }`
               }
             >
@@ -152,7 +152,7 @@ const About = () => {
                 `rounded-full flex items-center justify-center ${
                   isActive
                     ? "w-12 h-12 sm:w-14 sm:h-14 bg-[#FF3217]"
-                    : "w-10 h-10 sm:w-12 sm:h-12 bg-[#000]"
+                    : "w-12 h-12 sm:w-12 sm:h-12 bg-[#000]"
                 }`
               }
             >
@@ -186,7 +186,7 @@ const About = () => {
                 `rounded-full flex items-center justify-center ${
                   isActive
                     ? "w-12 h-12 sm:w-14 sm:h-14 bg-[#FF3217]"
-                    : "w-10 h-10 sm:w-12 sm:h-12 bg-[#000]"
+                    : "w-12 h-12 sm:w-12 sm:h-12 bg-[#000]"
                 }`
               }
             >
@@ -267,7 +267,7 @@ const About = () => {
                 `rounded-full flex items-center justify-center ${
                   isActive
                     ? "w-12 h-12 sm:w-14 sm:h-14 bg-[#FF3217]"
-                    : "w-10 h-10 sm:w-12 sm:h-12 bg-[#000]"
+                    : "w-12 h-12 sm:w-12 sm:h-12 bg-[#000]"
                 }`
               }
             >
