@@ -905,7 +905,7 @@ const Products = () => {
                   key={index}
                   src={src}
                   alt=""
-                  className='w-full md:w-[340px] lg:w-[300px] xl:w-[340px] h-[200px] sm:h-[200px] lg:h-[250px] xl:h-[300px] object-cover object-left'
+                  className='w-full md:w-[340px] lg:w-[300px] xl:w-[340px] h-[400px] sm:h-[230px] lg:h-[250px] xl:h-[300px] object-cover object-left'
                 />
               ))}
             </div>
